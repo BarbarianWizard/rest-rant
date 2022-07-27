@@ -2,4 +2,14 @@ h1 {
     text-align: center;
     color: cornflowerblue;
   }
+
+  .bg{
+    size-adjust: auto;
+    
+  }
+
+  .btn-primary{
+    align-content: center;
+  }
+
   

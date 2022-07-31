@@ -12,4 +12,28 @@ h1 {
     align-content: center;
   }
 
-  
+ 
+nav {
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: pink;
+    text-decoration: none;
+}

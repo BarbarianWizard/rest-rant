@@ -3,16 +3,6 @@ h1 {
     color: cornflowerblue;
   }
 
-  .bg{
-    size-adjust: auto;
-    
-  }
-
-  .btn-primary{
-    align-content: center;
-  }
-
- 
 nav {
     background-color: cornflowerblue;
     padding: 10px;
@@ -47,4 +37,12 @@ main {
   margin-right: 20px;
   margin-left: 20px;
   background-color: white;
+}
+
+.container {
+  flex-direction: column;
+}
+
+#showPic {
+  align-content: flex-start;
 }

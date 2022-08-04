@@ -32,8 +32,16 @@ router.get('/new', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-  res.send('GET /places/:id stub')
+  db.Place.findById(req.params.id)
+  .then(place => {
+      res.render('places/show', { place })
+  })
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
 })
+
 
 router.put('/:id', (req, res) => {
   res.send('PUT /places/:id stub')

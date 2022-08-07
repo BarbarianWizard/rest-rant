@@ -39,10 +39,3 @@ main {
   background-color: white;
 }
 
-.container {
-  flex-direction: column;
-}
-
-#showPic {
-  align-content: flex-start;
-}

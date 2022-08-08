@@ -3,6 +3,10 @@ h1 {
     color: cornflowerblue;
   }
 
+h2 {
+  color: lightblue;
+}
+
 nav {
     background-color: cornflowerblue;
     padding: 10px;
@@ -39,3 +43,35 @@ main {
   background-color: white;
 }
 
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+#greyedOut {
+  color:darkgray;
+}
+
+#editDelete {
+  display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*
+
+.clean {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+*/

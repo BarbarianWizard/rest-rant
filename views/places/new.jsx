@@ -18,28 +18,31 @@ function new_form (data) {
             <form method="POST" action="/places">
   <div className="form-group">
     <label htmlFor="name">Place Name</label>
-    <input className="form-control" id="name" name="name" required />
+    <input className="form-control clean" id="name" name="name" required />
   </div>
   <div className="form-group">
     <label htmlFor="pic">Place Picture</label>
-    <input className="form-control" id="pic" name="pic" />
+    <input className="form-control clean" id="pic" name="pic"  />
   </div>
+  <div className="container">
   <div className="form-group">
     <label htmlFor="city">City</label>
-    <input className="form-control" id="city" name="city" />
+    <input className="form-control" id="city" name="city"  />
   </div>
   <div className="form-group">
     <label htmlFor="state">State</label>
-    <input className="form-control" id="state" name="state" />
-  </div>
-  <div className="form-group">
-    <label htmlFor="cuisines">Cuisines</label>
-    <input className="form-control" id="cuisines" name="cuisines" required />
+    <input className="form-control" id="state" name="state"  />
   </div>
   <div className="form-group">
   <label for="founded">Founded Year</label>
   <input type="number" className="form-control" id="founded" name="founded" value={new Date().getFullYear()} />
 </div>
+</div>
+  <div className="form-group">
+    <label htmlFor="cuisines">Cuisines</label>
+    <input className="form-control clean" id="cuisines" name="cuisines" required />
+  </div>
+  
 
   <input className="btn btn-primary" type="submit" value="Add Place" />
 </form>
@@ -49,3 +52,7 @@ function new_form (data) {
 }
 
 module.exports = new_form
+
+/*
+value={} 
+*/

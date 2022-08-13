@@ -52,10 +52,6 @@ main {
   gap: 5px;
 }
 
-#greyedOut {
-  color:darkgray;
-}
-
 #editDelete {
   display: flex;
     flex-direction: row;
@@ -65,7 +61,11 @@ main {
     justify-content: center;
 }
 
+
 /*
+
+
+
 
 .clean {
   display: flex;

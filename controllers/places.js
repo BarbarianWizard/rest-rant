@@ -68,7 +68,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   db.Place.findByIdAndDelete(req.params.id)
-  .then(place => {
+  .then(() => {
       res.redirect('/places')
   })
   .catch(err => {

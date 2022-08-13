@@ -67,11 +67,11 @@ rating = (
               Serving {data.place.cuisines}
             </h4>
             <div id="editDelete">
-            <a href={`${data.id}/edit`} className="btn btn-warning"> 
+            <a href={`/places/${data.place.id}/edit`} className="btn btn-warning"> 
   Edit
 </a>  
 <br></br>
-<form method="POST" action={`${data.id}?_method=DELETE`}> 
+<form method="POST" action={`/places/${data.place.id}?_method=DELETE`}> 
   <button type="submit" className="btn btn-danger">
     Delete
   </button>
@@ -86,7 +86,7 @@ rating = (
         </div>
         <br></br>
         <h2> ಠ益ಠ Rant  or  (/◕ヮ◕)/ Rave?</h2>
-        <form action={`/places/${data.place.id}/comment`} method="POST">
+        <form action={`${data.place.id}/comment`} method="POST">
           <div>
           <div>
             <label htmlFor="content">Content</label>
